@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Dev Board</title>
+    <!-- daisy ui cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailwindcss cdn link  -->
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+</head>
+<body class="bg-blue-100 pt-6 pb">
+    <header class="max-w-screen-2xl h-24 mx-auto bg-white p-5 rounded-2xl">
+        <nav class="flex justify-between">
+            <div class="flex items-center gap-3">
+                <img src="./assets/logo.png" alt="">
+                <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+
+            </div>
+            <div class="flex gap-9 ">
+                <div class="flex gap-1 bg-white w-28 h-16 p-3 rounded-full">
+                    <img src="./assets/checkbox.png" alt="">
+                    <h3 class="font-bold text-3xl">23</h3>
+                </div>
+                
+                <button class="btn w-20 h-16 rounded-full"><img src="./assets/theme-btn.png" alt=""></button>
+            </div>
+        </nav>
+    </header>
+    <main class="max-w-screen-2xl mx-auto flex gap-6 pb-16">
+        <section class="">
+                <!-- 1st section part  -->
+
+            <section class="bg-white mt-5 p-6 flex gap-6">
+        <div class=" flex items-center gap-3 w-64 h-32 bg-blue-50 justify-center rounded-xl ">
+            <div><img src="./assets/checkbox.png" alt=""></div>
+            <div>
+                <h4 class="font-medium">Task Assigned </h4>
+                <h3 class="text-3xl font-bold ">05</h3>
+            </div>
+
+        </div>
+        <!-- 2nd div hear  -->
+        <div id="new_today" class=" flex items-center gap-3 w-[32.75rem] h-32 bg-blue-50 justify-center rounded-xl">
+            <img src="./assets/board.png" alt="">
+            <div>
+                <h3 class="font-medium text-2xl">Discover Something <br> New Today!</h3>
+            </div>
+        </div>
+
+        <div class=" flex items-center p-1 gap-4 w-64 h-32 bg-blue-50 justify-center rounded-xl ">
+            <div><img src="./assets/calender.png" alt=""></div>
+            <div>
+                <h4 class="font-medium">Today </h4>
+                <h3 id="currentDate" class="text-2xl font-bold "></h3>
+            </div>
+
+        </div>
+            </section>
+
+                <!-- 2nd section part  -->
+
+            <section class="bg-white p-6 grid grid-cols-3 gap-9">
+            <div class="card bg-blue-50 w-80 h-80 shadow-sm">
+            <!-- box 1 -->
+            <div class="card-body">
+                <h4 class="w-28 h-10 bg-white flex justify-center items-center rounded-lg">ShopEase</h4>
+              <h2 class="card-title mt-4 mb-4 text-2xl font-medium ">Fix Mobile Button Issue </h2>
+              <p class="bg-white p-2">Debug using Chrome DevTools, check for overlappin</p>
+              <div class="card-actions justify-between mt-6">
+                <div>
+                    <p>Deadline</p>
+                    <h4>21 March2025</h4>
+                </div>
+                <button id="btn_1" class="btn btn-primary rounded-lg">Completed</button>
+                
+              </div>
+            </div>
+          </div>
+          <!-- box 2 -->
+
+          <div class="card bg-blue-50 w-80 h-80 shadow-sm">
+            <div class="card-body">
+                <h4 class="w-28 h-10 bg-white flex justify-center items-center rounded-lg">CloudSync</h4>
+              <h2 class="card-title mt-4 mb-4 text-2xl font-medium ">Add Dark Mode </h2>
+              <p class="bg-white p-2">Debug using Chrome DevTools, check for overlappin</p>
+              <div class="card-actions justify-between mt-6">
+                <div>
+                    <p>Deadline</p>
+                    <h4>21 March2025</h4>
+                </div>
+                <button class="btn btn-primary rounded-lg">Completed</button>
+                
+              </div>
+            </div>
+          </div>
+          <!-- box 3 -->
+
+          <div class="card bg-blue-50 w-80 h-80 shadow-sm">
+            <div class="card-body">
+                <h4 class="w-28 h-10 bg-white flex justify-center items-center rounded-lg">SwiftPay</h4>
+              <h2 class="card-title mt-4 mb-4 text-2xl font-medium ">Optimize  Home page  </h2>
+              <p class="bg-white p-2">Debug using Chrome DevTools, check for overlappin</p>
+              <div class="card-actions justify-between mt-6">
+                <div>
+                    <p>Deadline</p>
+                    <h4>21 March2025</h4>
+                </div>
+                <button class="btn btn-primary rounded-lg">Completed</button>
+                
+              </div>
+            </div>
+          </div>
+          <!-- box 4 -->
+
+          <div class="card bg-blue-50 w-80 h-80 shadow-sm">
+            <div class="card-body">
+                <h4 class="w-28 h-10 bg-white flex justify-center items-center rounded-lg">Meta</h4>
+              <h2 class="card-title mt-4 mb-4 text-2xl font-medium ">Add new emoji 🤲 </h2>
+              <p class="bg-white p-2">Debug using Chrome DevTools, check for overlappin</p>
+              <div class="card-actions justify-between mt-6">
+                <div>
+                    <p>Deadline</p>
+                    <h4>21 March2025</h4>
+                </div>
+                <button class="btn btn-primary rounded-lg">Completed</button>
+                
+              </div>
+            </div>
+          </div>
+          <!-- box 5 -->
+
+          <div class="card bg-blue-50 w-80 h-80 shadow-sm">
+            <div class="card-body">
+                <h4 class="w-28 h-10 bg-white flex justify-center items-center rounded-lg">Google LLC</h4>
+              <h2 class="card-title mt-4 mb-4 text-2xl font-medium ">Integrate OpenAI API  </h2>
+              <p class="bg-white p-2">Debug using Chrome DevTools, check for overlappin</p>
+              <div class="card-actions justify-between mt-6">
+                <div>
+                    <p>Deadline</p>
+                    <h4>21 March2025</h4>
+                </div>
+                <button class="btn btn-primary rounded-lg">Completed</button>
+                
+              </div>
+            </div>
+          </div>
+          <!-- box 6 -->
+
+          <div class="card bg-blue-50 w-80 h-80 shadow-sm">
+            <div class="card-body">
+                <h4 class="w-28 h-10 bg-white flex justify-center items-center rounded-lg">Glassdoar</h4>
+              <h2 class="card-title mt-4 mb-4 text-2xl font-medium ">Improve Job searching  </h2>
+              <p class="bg-white p-2">Debug using Chrome DevTools, check for overlappin</p>
+              <div class="card-actions justify-between mt-6">
+                <div>
+                    <p>Deadline</p>
+                    <h4>21 March2025</h4>
+                </div>
+                <button class="btn btn-primary rounded-lg">Completed</button>
+                
+              </div>
+            </div>
+          </div>
+            </section>
+        </section>
+        <!-- 3rd seaction part  -->
+         <section class="bg-white mt-5 p-6 w-[22.87rem] rounded-2xl ">
+            <div class="">
+                <div class="flex justify-center gap-4">
+                    <img src="./assets/activity.png" alt="">
+                    <h3 class="font-medium text-xl">Activity Log</h3>
+                </div>
+                <div class="flex justify-center mt-4 ">
+                    <button class="btn btn-primary rounded-lg ">Clear History</button>
+                </div>
+    
+            </div>
+         </section>
+
+     
+    </main>
+    <footer></footer>
+    <!-- js part link  -->
+     <script src="./script/discover.js"></script>
+</body>
+</html>
