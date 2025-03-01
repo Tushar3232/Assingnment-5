@@ -10,7 +10,7 @@
     <!-- tailwindcss cdn link  -->
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
 </head>
-<body class="bg-blue-100 pt-6 pb">
+<body  class="bg-blue-100 pt-6 pb">
     <header class="max-w-screen-2xl h-24 mx-auto bg-white p-5 rounded-2xl">
         <nav class="flex justify-between">
             <div class="flex items-center gap-3">
@@ -21,10 +21,10 @@
             <div class="flex gap-9 ">
                 <div class="flex gap-1 bg-white w-28 h-16 p-3 rounded-full">
                     <img src="./assets/checkbox.png" alt="">
-                    <h3 class="font-bold text-3xl">23</h3>
+                    <h3 id="Task_complet" class="font-bold text-3xl">23</h3>
                 </div>
                 
-                <button class="btn w-20 h-16 rounded-full"><img src="./assets/theme-btn.png" alt=""></button>
+                <button id="bg_btn" class="btn w-20 h-16 rounded-full"><img src="./assets/theme-btn.png" alt=""></button>
             </div>
         </nav>
     </header>
@@ -37,7 +37,7 @@
             <div><img src="./assets/checkbox.png" alt=""></div>
             <div>
                 <h4 class="font-medium">Task Assigned </h4>
-                <h3 class="text-3xl font-bold ">05</h3>
+                <h3 id="task" class="text-3xl font-bold ">06</h3>
             </div>
 
         </div>
@@ -90,7 +90,7 @@
                     <p>Deadline</p>
                     <h4>21 March2025</h4>
                 </div>
-                <button class="btn btn-primary rounded-lg">Completed</button>
+                <button id="btn_2" class="btn btn-primary rounded-lg">Completed</button>
                 
               </div>
             </div>
@@ -107,7 +107,7 @@
                     <p>Deadline</p>
                     <h4>21 March2025</h4>
                 </div>
-                <button class="btn btn-primary rounded-lg">Completed</button>
+                <button id="btn_3" class="btn btn-primary rounded-lg">Completed</button>
                 
               </div>
             </div>
@@ -124,7 +124,7 @@
                     <p>Deadline</p>
                     <h4>21 March2025</h4>
                 </div>
-                <button class="btn btn-primary rounded-lg">Completed</button>
+                <button id="btn_4" class="btn btn-primary rounded-lg">Completed</button>
                 
               </div>
             </div>
@@ -141,7 +141,7 @@
                     <p>Deadline</p>
                     <h4>21 March2025</h4>
                 </div>
-                <button class="btn btn-primary rounded-lg">Completed</button>
+                <button id="btn_5" class="btn btn-primary rounded-lg">Completed</button>
                 
               </div>
             </div>
@@ -158,7 +158,7 @@
                     <p>Deadline</p>
                     <h4>21 March2025</h4>
                 </div>
-                <button class="btn btn-primary rounded-lg">Completed</button>
+                <button id="btn_6" class="btn btn-primary rounded-lg">Completed</button>
                 
               </div>
             </div>
@@ -184,5 +184,6 @@
     <footer></footer>
     <!-- js part link  -->
      <script src="./script/discover.js"></script>
+     <script src="./script/main.js"></script>
 </body>
 </html>
