@@ -4,8 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>Hello</h1>
+<body class="bg-blue-100 pt-6 pb-8 pb">
+    <header class="max-w-screen-2xl h-24 mx-auto bg-white p-5 rounded-2xl">
+        <nav class="flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="./assets/logo.png" alt="">
+                <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+
+            </div>
+            
+            <button id="bac_btn" class="btn btn-primary">Back to desk</button>
+            
+        </nav>
+    </header>
+    <main class="max-w-screen-2xl mx-auto">
+        <section class="flex justify-center mt-5 mb-5">
+            <h2 class="font-bold text-4xl">Blog</h2>
+        </section>
+        <section class=" bg-white p-5 mt-5 rounded-xl">
+            <h3 class="font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</h3>
+            <p class="font-bold">
+                Ans: <br>
+                Theair are 5 ways. 
+            </p>
+            <ol>
+                <li>getElementsByTagName()</li>
+                <li>getElementsByClassName()</li>
+                <li>getElementById()</li>
+                <li>querySelector()</li>
+                <li>querySelectorAll()</li>
+            </ol>
+            
+        </section>
+        <section class=" bg-white p-5 mt-5 rounded-xl">
+            <h3 class="font-bold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+            <h5 class="font-bold">Ans: innerHTML</h5>
+            <p>
+                If we use it we can see the output with html tag.
+            </p>
+            <h5 class="font-bold">Ans: innerText</h5>
+            <p>
+                If we use it we can see the value witch the user see in the front site in web site.
+            </p>
+            <h5 class="font-bold"> Ans: texContent</h5>
+            <p>
+                If we use it we can see the output with the hidden value.
+            </p>
+        </section>
+        <section class=" bg-white p-5 mt-5 rounded-xl">
+            <h3 class="font-bold text-xl">Question-3: What is event delegation in the DOM?
+
+            </h3>
+            <h5 class="font-bold">Ans:</h5>
+            <p>
+                Useing event delegation in code we can wright oure code shortly , we can save oure time and its make oure code faster.
+            </p>
+        </section>
+        <section class=" bg-white p-5 mt-5 rounded-xl">
+            <h3 class="font-bold text-xl">Question-4: What is event bubbling in the DOM?</h3>
+            <h5 class="font-bold">Ans:</h5>
+            <p>
+                Event Delegation works easily (by attaching an event listener to a parent element, multiple child elements' events can be handled)
+            </p>
+        </section>
+        <section class=" bg-white p-5 mt-5 rounded-xl">
+            <h3 class="font-bold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <h5 class="font-bold">Ans:</h5>
+            <p>
+                Create an element=	document.createElement("tagName") <br>
+                Add as last child=	parent.appendChild(child) <br>
+                Add as first child=	parent.prepend(child) <br>
+                Insert before a specific element=	parent.insertBefore(newElement, referenceElement) <br>
+                Remove an element directly=	element.remove() <br>
+                Remove a child from parent=	parent.removeChild(child) <br>
+                Remove all children=	parent.innerHTML = ""
+            </p>
+        </section>
+    </main>
+
+    <!-- js link  -->
+     <script src="script/back.js"></script>
 </body>
 </html>
